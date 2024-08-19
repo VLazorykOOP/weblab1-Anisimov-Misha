@@ -4,15 +4,15 @@
     <link rel="stylesheet" href="./css/mycss.css">
     <meta charset=utf-8>
     <meta name="Author" content="Анісімов Михайло Олексійович">
-    <meta name="Description" content="-----">
+    <meta name="Description" content="Продаж сигарет">
     <meta name="Keywords" content="Web - сторiнка, development, HTML reference">
     <title>Сторінка Анісімова Михайла</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <h3 class="main-title">Сторінка Анісімова Михайла</h3>
-            <p class="main-subtitle">Ласкаво просимо на мою домашню сторінку!</p>
+            <h1 class="main-title" style="text-align: center;" dir="ltr">Сторінка Анісімова Михайла</h1>
+            <h5 class="main-subtitle" style="font-size: 20px;" align="center" dir="ltl">Ласкаво просимо на мою домашню сторінку!</h5>
         </header>
         <div class="navigation">
             <a class="navigation-item" href="#">Головна сторінка</a>
@@ -20,7 +20,8 @@
             <a class="navigation-item" href="#">Новини фірми</a>
         </div>
         <main class="main-content">
-            <p class="main-text"><span>Спасибі</span> Вам, шановний відвідувач, за те, що Ви знайшли час і можливість
+            <p class="main-text" id="main-text" title="Подяка" lang="uk">
+                <span>Спасибі</span> Вам, шановний відвідувач, за те, що Ви знайшли час і можливість
                 заглянути на мою сторінку у Всесвітній мережі.
                 Тут Вашій увазі буде запропонована інформація про мої захоплення,
                 мої біографії, мої друзі, робота та родині. <br><br>
@@ -29,22 +30,27 @@
                 обновлятися й у найближчому майбутньому багато хто з перерахованих
                 рубрик займуть своє законне місце. Заходьте на мою сторінку частіше!
             </p><br>
-            <h5>З повагою, Анісімов Михайло Олексійович</h5>
+            <h6 align="end" style="font-style: italic;" title="Анісімов Михайло Олексійович">
+                З повагою, Анісімов Михайло Олексійович 
+                <s class="some..." id="2" lang="ukr">Олександрович</s>
+            </h6>
         </main>
+        <hr color="gray" size="0px" noshade>
         <div class="about-me">
             <p>Про себе...</p>
             <p>
-                Я, Анісімов Михайло Олексійович, народився в 2006 році, в місті Попасна,
+                Я, <b title="Anisimov-Misha" id="3">Анісімов Михайло Олексійович</b>, народився в 2006 році, в місті Попасна,
                 Луганська область, Україна. Жив там до 5-ти річного віку, після чого ми з сім'єю 
                 вирішили переїхати в Полтавську область, де і почалася моя основна історія...
-                <br><br>
+                <br><br class="space" clear="both" id="1">
                 Там я почав ходити в школу, де в ітозі закінчив 11 класів. Також ходив на різні секції, 
                 по типу легкої атлетики, образотворчого мистецтва та культури. Але більше цього всього
                 я займався футболом. В загалом, моє навчання в ДЮСШ тривало близько 7-8 років...
                 <br><br>
                 З початком повномасштабної війни - ми переїхали до наших друзів в Чернівці на пару тижнів, чисто перечекати певний період для безпеки. 
                 Таким чином, ми вже тут два роки та не збираємося повертатись. Тут я познайомився із програмуванням та створенням сайтів, що мене дуже захопило.
-                Тепер навчаюся в одному із найкращих університетів країни та світу та хочу пов'язати своє життя із програмуванням...
+                Тепер навчаюся в одному із найкращих університетів країни та світу та хочу пов'язати своє життя із програмуванням
+                <tt id="4" title="..." lang="uk">...</tt>
             </p>
         </div>
         <footer class="footer">
@@ -57,14 +63,14 @@
 </body>
 </html>
 
-<!--
-<h3> - style dir aling
-<h4> - title aling id
-<h5> - style dir aling
-<p> - id title lang
-<br> - id title
-<hr> - size color width
-<small> - class lang dir
-<strike> - id title lang
-<big> - id title lang.         
+<!-- 
+<h1> - dir class style 
+<h5> - style dir aling 
+<h6> - aling style title 
+<p> - id title lang 
+<br> - class clear id 
+<hr> - color size noshade
+<s> - lang id class
+<b> - title id 
+<tt> - id title lang. 
 -->
