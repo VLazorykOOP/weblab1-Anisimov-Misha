@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="uk">
 <head>
-    <link rel="stylesheet" href="./css/mycss.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset=utf-8>
     <meta name="Author" content="Анісімов Михайло Олексійович">
     <meta name="Description" content="Продаж сигарет">
@@ -10,18 +10,19 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <h1 class="main-title" style="text-align: center;" dir="ltr">Сторінка Анісімова Михайла</h1>
-            <h5 class="main-subtitle" style="font-size: 20px;" align="center" dir="ltl">Ласкаво просимо на мою домашню сторінку!</h5>
-        </header>
-        <div class="navigation">
-            <a class="navigation-item" href="#">Головна сторінка</a>
-            <a class="navigation-item" href="#">Про фірму</a>
-            <a class="navigation-item" href="#">Новини фірми</a>
-        </div>
+        <h1 style="text-align: center; font-weight: 700;
+                   font-size: 30px;margin: 0 0 10px 0; 
+                   color: rgb(255, 190, 104);" dir="ltr">
+                   Сторінка Анісімова Михайла
+        </h1>
+        <h5 style="font-size: 20px; font-weight: 700;
+                    margin: 0 0 20px 0;" align="center" dir="ltl">
+                    Ласкаво просимо на мою домашню сторінку!
+        </h5>
+        <div class="navigation-js"></div>
         <main class="main-content">
             <p class="main-text" id="main-text" title="Подяка" lang="uk">
-                <span>Спасибі</span> Вам, шановний відвідувач, за те, що Ви знайшли час і можливість
+                <span style="color: red; font-weight: 700;">Спасибі Вам, шановний відвідувач, </span>за те, що Ви знайшли час і можливість
                 заглянути на мою сторінку у Всесвітній мережі.
                 Тут Вашій увазі буде запропонована інформація про мої захоплення,
                 мої біографії, мої друзі, робота та родині. <br><br>
@@ -30,14 +31,14 @@
                 обновлятися й у найближчому майбутньому багато хто з перерахованих
                 рубрик займуть своє законне місце. Заходьте на мою сторінку частіше!
             </p><br>
-            <h6 align="end" style="font-style: italic;" title="Анісімов Михайло Олексійович">
+            <h6 align="end" style="font-style: italic; text-decoration: underline;" title="Анісімов Михайло Олексійович">
                 З повагою, Анісімов Михайло Олексійович 
                 <s class="some..." id="2" lang="ukr">Олександрович</s>
             </h6>
         </main>
         <hr color="gray" size="0px" noshade>
         <div class="about-me">
-            <p>Про себе...</p>
+            <p style="color: red; font-weight: 700;">Про себе...</p>
             <p>
                 Я, <b title="Anisimov-Misha" id="3">Анісімов Михайло Олексійович</b>, народився в 2006 році, в місті Попасна,
                 Луганська область, Україна. Жив там до 5-ти річного віку, після чого ми з сім'єю 
@@ -53,13 +54,9 @@
                 <tt id="4" title="..." lang="uk">...</tt>
             </p>
         </div>
-        <footer class="footer">
-            <a target="_blank" href="https://www.instagram.com/_misha_anisimov_/" class="footer-link"><img src="./img/inst.svg" alt="#img"></a>
-            <a target="_blank" href="https://t.me/MishAnisimov" class="footer-link"><img src="./img/tlgrm.svg" alt="#img"></a>
-            <a target="_blank" href="https://github.com/Anisimov-Misha" class="footer-link"><img src="./img/github.svg" alt="#img"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/misha-anisimov-95ba80265/" class="footer-link"><img src="./img/linkedin.svg" alt="#img"></a>
-        </footer>
+        <div class="footer-js"></div>
     </div>
+    <script src="./js/myscript.js"></script>
 </body>
 </html>
 

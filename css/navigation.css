@@ -1,0 +1,22 @@
+.navigation{
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid wheat;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 0 auto 30px;
+}
+.navigation-item{
+    list-style: none;
+    border-radius: 16px;
+    border: 3px solid wheat;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: black;
+    transition: 0.1s linear;
+}
+.navigation-item:hover{
+    transform: translate(0px, 3px);
+}
