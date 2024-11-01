@@ -1,0 +1,25 @@
+.footer{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 0;
+    border: 3px solid wheat;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.footer-link{
+    transition: 0.2s ease-out;
+    display: block !important;
+}
+.footer-link:active{
+    color: red;
+}
+.footer-link::after{
+    content: '';
+    width: 0;
+}
+.footer-link:hover{
+    transform: scale(115%, 115%);
+}

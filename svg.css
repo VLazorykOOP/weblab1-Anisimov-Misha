@@ -1,0 +1,68 @@
+@import './null.css'; 
+
+body{
+    padding: 15px;
+}
+
+svg {
+    display: block;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+/* Загальні стилі для фігур */
+.shape {
+    fill: blue;
+}
+.rect{
+    fill: lightblue;
+}
+
+/* Анімації */
+
+@keyframes move {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(5px, 0); }
+    100% { transform: translate(0, 0); }
+}
+.moving {
+    animation: move 5s infinite;
+}
+
+@keyframes move2 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-3px, 0); }
+    100% { transform: translate(0, 0); }
+}
+.moving2 {
+    animation: move2 5s infinite;
+}
+
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.rotating {
+    animation: rotate 3s infinite;
+    transform-origin: center;
+}
+
+
+@keyframes scale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.scaling {
+    animation: scale 2s infinite;
+}
+
+@keyframes color {
+    0% { fill: lightblue; }
+    50% { fill: red; }
+    100% { fill: lightblue; }
+}
+.color {
+    animation: color 2s infinite;
+}

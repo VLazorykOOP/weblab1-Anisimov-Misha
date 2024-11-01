@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Анісімов Михайло Олексійович">
+    <meta name="Description" content="Пошук інформації">
+    <meta name="Keywords" content="Web - сторінка, development, HTML">
+    <title>Пошук інформації</title>
+    <style>
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 700px;
+            display: block;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid gray;
+            max-width: 600px;
+            margin: 10px auto;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation-js"></div>
+
+    <div style="text-align: center;">
+        <h1>Пошук інформації за текстом</h1>
+    
+        <form id="searchForm">
+            <label for="inputText">Введіть текст для аналізу:</label>
+            <input type="text" id="inputText" placeholder="Введіть текст..." required>
+            <button type="button" id="searchBtn">Пошук інформації</button>
+        </form>
+     
+        <div class="result" id="resultBox" >
+            <!-- Тут з'являться результати -->
+        </div>
+    </div>
+
+    <div class="footer-js"></div>
+
+    <script src="./js/search.js"></script>
+    <script src="./js/myscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import './null.css';
+
+body{
+    background-color: rgb(240, 232, 222);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: static;
+}
+/* ------------------------- */
+.main-content{
+    margin: 0 0 20px 0;
+    border: 3px solid wheat;
+    padding: 16px;
+    border-radius: 16px;
+    transition: 0.2s ease-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 4px 0px;
+}
+.main-content:hover{
+    transform: scale(101%, 101%);
+}
+.main-text span{
+    margin: 0 0 0 25px;
+}
+.about-me{
+    border: 3px solid wheat;
+    padding: 16px;
+    border-radius: 16px;
+    transition: 0.2s ease-out;
+    margin: 0 0 20px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 4px 0px;
+}
+.about-me:hover{
+    transform: scale(101%, 101%);
+}
+
+/* 
+Псевдокласи::first-child, 
+Псевдокласи::in-range, 
+Псевдокласи::empty, 
+Псевдокласи::first-of-type, 
+Псевдокласи::active , 
+Псевдокласи::invalid, 
+Псевдокласи::last-of-type; 
+Псевдоелементи ::first-line, 
+Псевдоелементи ::after; !important; 
+
+margin-bottom:<розмір>, 
+margin-bottom:<процент>, 
+margin-left:<розмір>, 
+margin-left:<процент>, 
+margin:<розмір>, 
+margin:<процент> ; 
+padding:<розмір>, 
+padding-left:<розмір>, 
+padding-bottom:<розмір>; 
+
+border-right-width:thin , 
+border-right-width: thick , 
+border-bottom-width:thin , 
+border-bottomwidth: thick , 
+border- top-width:thin , 
+border- top-width: thick ; 
+border-left-color:<колір>, 
+border-bottom-color:<колір>, 
+border-right-color:<колір>; 
+border-right-style:none, 
+border-rightstyle: ridge, 
+border-right-style: inset, 
+border-right-style: double, 
+border-left-style:none, 
+borderleft-style: ridge, 
+border-left-style: inset, 
+border-left-style: double, 
+border- top-style:none, 
+bordertop-style: ridge, 
+border- top-style: inset, 
+border- top-style: double;
+
+display: inline, 
+display: table-row, 
+display: compact, 
+display: block, 
+display: tablecolumn-group, 
+display: table-header-group; 
+
+position: static, 
+position: relative; 
+z-index: auto; 
+float: left, 
+float: none; 
+clear: none, 
+clear: left; 
+direction: ltr; 
+unicode-bidi: normal, 
+unicode-bidi: bidioverride; 
+
+max-width, width; 
+height: <розмір>, 
+height: <процент>, 
+maxheight: <розмір>, 
+max-height: <процент>; 
+line-height: normal, 
+line-height: <процент>; 
+verticalalign: baseline, 
+vertical-align: bottom, 
+vertical-align: super, 
+vertical-align: text-top; 
+overflow: visible, 
+overflow: scroll; 
+clip: rect(<top>,<right>,<bottom>,<left>); 
+visibility: visible, 
+visibility: hidden; 
+outline-width, outline; 
+
+color: <колір>; 
+background-color: <колір>; 
+background-image: <uri>; 
+background-attachment: scroll; 
+background-position: <розмір> 
+background-position: left, 
+background-position: bottom; 
+*/

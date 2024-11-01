@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+
+<head>
+    <link rel="stylesheet" href="./css/audio.css">
+    <meta charset=utf-8>
+    <meta name="Author" content="Анісімов Михайло Олексійович">
+    <meta name="Description" content="Продаж сигарет">
+    <meta name="Keywords" content="Web - сторiнка, development, HTML reference">
+    <title>Audio and video</title>
+</head>
+
+<body>
+
+    <div class="navigation-js"></div>
+
+    <header>
+        <h1>Магазин сигарет</h1>
+        <p>Ласкаво просимо до вашої бібліотеки медіа-ресурсів, де ви можете переглядати та купувати наші товари</p>
+    </header>
+
+    <nav>
+        <form action="/search" method="get" accept-charset="UTF-8" name="searchForm" dir="ltr">
+            <input type="search" name="query" placeholder="Пошук..." autofocus required>
+            <button type="submit">Пошук</button>
+        </form>
+    </nav>
+
+    <main>
+        <section id="media-items">
+            <article>
+                <h2>Медіа-ресурси</h2>
+                <p>Короткий опис медіа-ресурсів</p>
+                
+                <audio controls>
+                    <source src="./img/juul-smoking-28389.mp3" type="audio/mp3">
+                    Ваш браузер не підтримує відтворення аудіо.
+                </audio>
+
+                <video width="320" height="240" controls>
+                    <source src="./img/5921199-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+            </article>
+        </section>
+
+        <section id="order-form">
+            <form action="/order" method="post">
+                <fieldset>
+                    <legend class="form-title" title="Форма замовлення" dir="ltr">Форма замовлення</legend>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="number" id="phone" name="phone" maxlength="15" required>
+
+                    <label for="birthday">Дата народження:</label>
+                    <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2023-12-31" required>
+
+                    <label for="quantity">Кількість:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+
+                    <label>Тип замовлення:</label>
+                    <label for="type1">Покупка</label>
+                    <input type="radio" id="type1" name="type" value="покупка">
+                    <label for="type2">Оренда</label>
+                    <input type="radio" id="type2" name="type" value="оренда">
+
+                    <label for="notes">Примітки:</label>
+                    <textarea id="notes" name="notes" maxlength="200" autofocus></textarea>
+
+                    <button type="submit" formaction="/submit-order" formtarget="_self" autofocus>Підтвердити замовлення</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <div class="footer-js"></div>
+
+    <script src="./js/myscript.js"></script>
+
+
+
+</body>
+
+</html>

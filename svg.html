@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Анімації</title>
+    <link rel="stylesheet" href="./css/svg.css">
+</head>
+<body>
+    <div class="navigation-js"></div>
+
+    <svg width="1000" height="500" viewBox="-5 -3 10 6">
+
+        <line x1="-6" y1="0" x2="6" y2="0" stroke="black" stroke-width="0.02"/>
+        <text x="5.5" y="0.15" font-size="0.5" fill="black">X</text>
+        
+        <line x1="0" y1="-3" x2="0" y2="3" stroke="black" stroke-width="0.02"/>
+        <text x="-0.19" y="-2.5" font-size="0.5" fill="black">Y</text>
+        
+        <!-- лів низ -->
+        <rect x="1" y="1" width="1" height="1" class="rect scaling"/>
+
+        <!-- прав низ -->
+        <rect x="4" y="1" width="1" height="1" class="rect scaling"/>
+
+        <!-- лів верх -->
+        <rect x="0" y="-2" width="2" height="1" class="rect"/>
+
+        <!-- прав верх -->
+        <rect x="4" y="-2" width="1" height="1" class="rect scaling"/>
+       
+        <!-- Нижній лів квадрат -->
+        <rect x="-3" y="1" width="1" height="1" class="rect color"/>
+
+        <!-- Нижній лів квадрат -->
+        <rect x="-2" y="0" width="1" height="1" class="rect color"/>
+        
+        <!-- Верхній квадрат -->
+        <rect x="-2" y="-2" width="1" height="1" class="rect moving2"/>
+
+        <!-- Ліве коло -->
+        <circle cx="-2" cy="-1" r="1" class="shape moving"/>
+        
+        <!-- Праве велике коло -->
+        <circle cx="3" cy="0" r="2" class="shape rotating"/>
+
+        <!-- овал -->
+        <ellipse cx="-1" cy="1.5" rx="1" ry="0.5" fill="blue"/>
+        
+    </svg>
+
+
+    <script src="./js/myscript.js"></script>
+</body>
+</html>

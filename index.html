@@ -2,13 +2,14 @@
 <html lang="uk">
 <head>
     <link rel="stylesheet" href="./css/style.css">
-    <meta charset=utf-8>
+    <meta charset="utf-8">
     <meta name="Author" content="Анісімов Михайло Олексійович">
     <meta name="Description" content="Продаж сигарет">
     <meta name="Keywords" content="Web - сторiнка, development, HTML reference">
     <title>Сторінка Анісімова Михайла</title>
 </head>
-<body>
+<body onblur="handleBlur()" onfocus="handleFocus()">
+
     <div class="wrapper">
         <h1 style="text-align: center; font-weight: 700;
                    font-size: 30px;margin: 0 0 10px 0; 
@@ -20,7 +21,7 @@
                     Ласкаво просимо на мою домашню сторінку!
         </h5>
         <div class="navigation-js"></div>
-        <main class="main-content">
+        <main class="main-content" id="main-content">
             <p class="main-text" id="main-text" title="Подяка" lang="uk">
                 <span style="color: red; font-weight: 700;">Спасибі Вам, шановний відвідувач, </span>за те, що Ви знайшли час і можливість
                 заглянути на мою сторінку у Всесвітній мережі.
@@ -37,7 +38,7 @@
             </h6>
         </main>
         <hr color="gray" size="0px" noshade>
-        <div class="about-me">
+        <div class="about-me" id="about-me">
             <p style="color: red; font-weight: 700;">Про себе...</p>
             <p>
                 Я, <b title="Anisimov-Misha" id="3">Анісімов Михайло Олексійович</b>, народився в 2006 році, в місті Попасна,
@@ -55,19 +56,12 @@
             </p>
         </div>
         <div class="footer-js"></div>
+
+        <div id="message-box" style="padding: 20px; border: 3px solid gray; color: red; font-weight: 700; position: absolute; left: 30px; top: 30px;">
+            <!-- Тут з'являтимуться повідомлення -->
+        </div>
     </div>
+
     <script src="./js/myscript.js"></script>
 </body>
 </html>
-
-<!-- 
-<h1> - dir class style 
-<h5> - style dir aling 
-<h6> - aling style title 
-<p> - id title lang 
-<br> - class clear id 
-<hr> - color size noshade
-<s> - lang id class
-<b> - title id 
-<tt> - id title lang. 
--->

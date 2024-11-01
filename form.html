@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="./css/form.css">
+    <meta charset=utf-8>
+    <meta name="Author" content="Анісімов Михайло Олексійович">
+    <meta name="Description" content="Продаж сигарет">
+    <meta name="Keywords" content="Web - сторiнка, development, HTML reference">
+    <title>Форма</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="main-title" style="text-align: center; font-weight: 700;
+            font-size: 30px;margin: 0 0 10px 0; 
+            color: rgb(255, 190, 104);" dir="ltr">Форма</h1>
+            <img hspace="name" usemap="#worldmap" id="15" class="img91823" style="color: red;">
+            <h5 class="main-subtitle" style="font-size: 20px; font-weight: 700;
+                    margin: 0 0 20px 0;" align="center" dir="ltl">Ласкаво просимо на сторінку заповнення форми!</h5>
+        </header>
+        <div class="navigation-js"></div>
+    
+    <!-- Заголовок -->
+    <h1>Форма введення інформації про товари</h1>
+    
+    <!-- Форма для введення інформації -->
+    <form action="#" method="post" enctype="multipart/form-data" accept-charset="UTF-8" novalidate>
+        <!-- Поле з інформацією про тип сигарет -->
+        <fieldset style="margin-bottom: 20px;">
+            <legend>Інформація про товар</legend>
+
+            <label for="product-name">Назва товару:</label>
+            <input style="border: 1px solid black;" type="text" id="product-name" name="product-name" maxlength="100" placeholder="Введіть назву товару" required><br><br>
+
+            <label for="nicotine-level">Рівень нікотину:</label>
+            <input style="border: 1px solid black;" type="number" id="nicotine-level" name="nicotine-level" min="0" max="20" placeholder="0-20" required><br><br>
+
+            <label for="cigarette-image">Завантажити зображення:</label>
+            <input style="border: 1px solid black;" type="file" id="cigarette-image" name="cigarette-image" accept="image/*" multiple><br><br>
+
+            <!-- Поле для вводу телефону -->
+            <label for="customer-phone">Номер телефону:</label>
+            <input style="border: 1px solid black;" type="tel" id="customer-phone" name="customer-phone" placeholder="093-123-4567" required><br><br>
+
+            <!-- Поле для пароля -->
+            <label for="password">Пароль:</label>
+            <input style="border: 1px solid black;" type="password" id="password" name="password" maxlength="20" required><br><br>
+
+            <!-- Поле для вибору кількості товару -->
+            <label for="quantity">Кількість (шт.):</label>
+            <input style="border: 1px solid black;" type="range" id="quantity" name="quantity" min="1" max="100" step="1" value="50" title="Обрати кількість товару" required><br><br>
+
+            <!-- Вибір опцій -->
+            <label>Виберіть тип товару:</label><br>
+            <input type="radio" id="classic" name="type" value="Класичні" checked>
+            <label for="classic">Класичні</label><br>
+            <input type="radio" id="menthol" name="type" value="Ментолові">
+            <label for="menthol">Ментолові</label><br><br>
+        </fieldset>
+
+        <!-- Додаткова інформація -->
+        <fieldset>
+            <legend>Додаткова інформація</legend>
+            <textarea style="border: 1px solid black;" id="additional-info" name="additional-info" rows="4" cols="50" wrap="hard" placeholder="Введіть додаткову інформацію тут..." autofocus title="Поле для додаткової інформації"></textarea><br><br>
+
+            <!-- Вибір способу доставки -->
+            <label for="delivery">Спосіб доставки:</label>
+            <select style="border: 1px solid black;" id="delivery" name="delivery" form="order-form" required autofocus>
+                <option value="courier" selected>Кур'єр</option>
+                <option value="pickup">Самовивіз</option>
+                <option value="post">Пошта</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Вибір смаків -->
+        <label for="flavors">Виберіть смаки:</label>
+        <input style="border: 1px solid black;" list="flavor-list" name="flavors" id="flavors">
+        <datalist id="flavor-list" class="flavors" title="Вибір смаку">
+            <option value="Ваніль">
+            <option value="Шоколад">
+            <option value="Ягідний">
+            <option value="Ментол">
+        </datalist><br><br>
+
+        <!-- Кнопки дій -->
+        <input style="border: 1px solid black;" type="hidden" name="hidden-info" value="Some hidden value">
+        <button type="button" formmethod="post" form="order-form" value="Надіслати">Надіслати</button>
+        <input style="border: 1px solid black;" type="reset" value="Скинути">
+        <input style="border: 1px solid black;" type="submit" value="Відправити інформацію" formtarget="_self">
+    </form>
+
+    <!-- Прогрес бар -->
+    <progress lang="uk" title="Завантаження..." max="100" value="70"></progress><br><br>
+
+    <!-- Метр бар -->
+    <meter id="nicotine-meter" value="10" min="0" max="20" high="15">10</meter>
+    <div class="footer-js"></div>
+    
+
+</div>
+
+
+<script src="./js/myscript.js"></script>
+</body>
+</html>

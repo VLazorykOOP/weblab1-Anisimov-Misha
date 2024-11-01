@@ -1,0 +1,11 @@
+@import './null.css';
+
+body{
+    background-color: rgb(240, 232, 222);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
